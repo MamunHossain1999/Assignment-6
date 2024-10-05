@@ -16,7 +16,7 @@
 
 <header>
         <!-- navbar start here -->
-        <div class="px-4 mx-auto max-w-7xl sm:px-6">
+        <div class=" w-11/12 px-4 mx-auto sm:px-6">
             <div class="relative pt-6 pb-16 sm:pb-24">
                 <nav class="relative flex items-center justify-between sm:h-10 md:justify-center" aria-label="Global">
                     <div class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
@@ -67,29 +67,59 @@
         <!-- navbar end here -->
 
         <!-- hero-area start here -->
-        <div class="mx-auto max-w-7xl sm:px-6 flex flex-col text-center justify-center items-center my-16">
-            <p class="text-gray-400 text-2xl">Bringing Families Together </p>
-            <h1 class="text-5xl w-[600px] text-center font-bold text-gray-800 leading-tight">Your Path to Adoption Starts Here</h1>
-            <p class="text-2xl text-gray-400 mt-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+        <div class="w-11/12 mx-auto  flex flex-col text-center justify-center items-center my-16">
+            <p class="text-gray-400 text-2xl lg:text-2xl">Bringing Families Together </p>
+            <h1 class="max-w-[600px] text-3xl lg:text-5xl  text-center font-bold text-gray-800 leading-tight">Your Path to Adoption Starts Here</h1>
+            <p class="max-w-[600px] text-2xl text-gray-400 mt-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
             <button class="bg-indigo-600 hover:bg-indigo-700 text-white text-xl mt-8 py-4 px-8 rounded-lg">View More</button>
         </div>
         <!-- hero-area end here -->
 
         <!-- img-section start here -->
-         <img class="mx-auto max-w-7xl" src="./images/pet.webp" alt="">
+        <div class="w-11/12 mx-auto">
+            <img class="w-9/12 mx-auto" src="./images/pet.webp" alt="">
+        </div>
         <!-- img-section end here -->
         
 </header>
 
 <main>
     <!-- adopt section start here -->
-    <div class="mx-auto max-w-7xl sm:px-6 flex flex-col text-center justify-center items-center my-16">
+    <div class="mx-auto w-11/12 sm:px-6 flex flex-col text-center justify-center items-center my-16 s">
        
-        <h1 class="text-5xl w-[600px] text-center font-bold text-gray-800 leading-tight">Adopt  Your  Best Friend</h1>
-        <p class="text-2xl text-gray-400 mt-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+        <h1 class="max-w-[600px]text-3xl lg:text-5xl text-center font-bold text-gray-800 leading-tight">Adopt  Your  Best Friend</h1>
+        <p class="max-w-[600px] text-gray-400 mt-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
         
     </div>
+
+    <div class="w-11/12 mx-auto flex justify-between border grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-">
+        <div class="flex gap-3 w-full lg:w-[300px]  rounded-lg  py-4 justify-center bg-green-100">
+            <img class="h-8 w-8" src="./images/shiba 1.png" alt="">
+            <span class="text-2xl">Dogs</span>
+        </div>
+        <div class="flex gap-3 w-full lg:w-[300px]  border-yellow-800 rounded-lg  py-4 justify-center bg-green-100">
+            <img class="h-8 w-8" src="./cat 1.png" alt="">
+            <span class="text-2xl">Cats</span>
+        </div>
+        <div class="flex gap-3 w-full lg:w-[300px] border-yellow-800 rounded-lg  py-4 justify-center bg-green-100">
+            <img class="h-8 w-8" src="./images/rabbit.png" alt="">
+            <span class="text-2xl">Rabbits</span>
+        </div>
+        <div class="flex gap-3 w-full lg:w-[300px] border-yellow-800 rounded-lg  py-4 justify-center bg-green-100">
+            <img class="h-8 w-8" src="./images/parrot 1.png" alt="">
+            <span class="text-2xl">Birds</span>
+        </div>
+    </div>
     <!-- adopt section end here -->
+
+    <!-- single button section start-->
+     <div class="w-11/12 mx-auto flex  justify-between">
+        <div class="font-bold text-2xl">Best Deal For you</div>
+
+        <button class="btn bg-indigo-600  text-white text-xl rounded-lg">Sort by Price</button>
+        
+     </div>
+    <!-- single button section end -->
 </main>
 
     <script src="index.js"></script>
