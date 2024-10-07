@@ -12,12 +12,11 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- css link -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
     <header>
       <!-- navbar start here -->
       <div class="w-11/12 px-4 mx-auto sm:px-6">
@@ -110,8 +109,7 @@
           </nav>
         </div>
       </div>
-        <!-- Spinner element -->
-    
+      <!-- Spinner element -->
 
       <!-- navbar end here -->
 
@@ -132,14 +130,12 @@
           readable content of a page when looking at its layout. The point of
           using Lorem Ipsum is that it has a.
         </p>
-       
-          <button onclick="showSpinner()" id="Spinner"
-          
-            class="bg-indigo-600 hover:bg-indigo-700 text-white text-xl mt-8 py-4 px-8 rounded-lg"
-          >
+
+        <a href="#toggle"
+          ><button class="btn bg-indigo-600 text-white text-2xl mt-3">
             View More
-          </button>
-          <div id="spinner" class="spinner hidden"></div>
+          </button></a
+        >
       </div>
       <!-- hero-area end here -->
 
@@ -150,7 +146,7 @@
       <!-- img-section end here -->
     </header>
 
-    <main>
+    <main id="toggle">
       <!-- adopt section start here -->
       <div
         class="mx-auto w-11/12 sm:px-6 flex flex-col text-center justify-center items-center my-16 s"
@@ -170,30 +166,69 @@
       <!-- api section -->
       <div
         id="category"
-        class="w-11/12 mx-auto flex flex-col gap-5 md:flex-row  justify-between"
+        class="w-11/12 mx-auto flex flex-col gap-5 md:flex-row justify-between"
       ></div>
+
+      <div class="w-11/12 mx-auto flex justify-center">
+        <span id="loader" class="loading loading-bars loading-lg"></span>
+      </div>
 
       <!-- single button section start-->
       <div class="w-11/12 mx-auto flex py-4 justify-between">
         <div class="font-bold text-2xl">Best Deal For you</div>
 
-        <button class="btn bg-indigo-600 text-white text-xl rounded-lg">
+        <button onclick="short_item()" class="btn bg-indigo-600 text-white text-xl rounded-lg">
           Sort by Price
         </button>
       </div>
       <!-- single button section end -->
 
       <!-- <section class="w-11/12mx-auto flex md:flex-col gap-5 items-start"> -->
-         <section class="w-11/12 flex flex-cols md:flex mx-auto px-3 mb-5">
-            <div
-            id="all-img"
-            class="w-full lg:w-9/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-6"></div>
-            <div class="w-3/12 mx-5  flex border rounded-lg mb-3  mt-6"></div>
-         </section>
-      
-        
+      <div class="grid md:grid-cols-4 border p-6 rounded-lg w-full">
+        <div
+          id="all-img"
+          class="w-full col-span-3 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-6 p-4"
+        ></div>
+
+        <div class="col-span-1 ">
+          <div
+          id="likeContainer"
+          class="w-full grid md:grid-cols-2 gap-5 border p-4 rounded-lg mb-3 mt-6 px-5"
+        ></div>
+        </div>
+      </div>
+
+      <div class="w-11/12 mx-auto flex justify-center">
+        <span
+          id="loader_for_category_image"
+          class="loading loading-bars loading-lg h-[30vh] hidden"
+        ></span>
+      </div>
+
+      <!-- You can open the modal using ID.showModal() method -->
+
+      <dialog id="my_modal_4" class="modal w-full lg:w-5/12 mx-auto text-center items-center">
+        <div class="modal-box w-6/12 max-w-5xl">
+          <h3 id="modal"></h3>
+          
+          <div class="modal-action justify-center ">
+            <form method="dialog">
+              <button class="btn bg-lime-400 ">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
     </main>
 
+    <dialog id="adopt_modal" class="modal flex items-center justify-center">
+      <div class="modal-box">
+        <h3 id="adoptModalTitle" class="font-bold text-3xl flex justify-center">Congrates</h3>
+        <p class="flex justify-center text-xl font-bold text-center">Adoption Process is Start For your Pet</p>
+        <span class="font-extrabold text-3xl flex justify-center" id="countdown">3</span>
+    
+      </div>
+    </dialog>
+    
     <!-- start footer section -->
     <footer class="bg-black">
       <div class="w-11/12 mx-auto">
@@ -269,7 +304,6 @@
     </footer>
     <!-- start footer section -->
 
-    
     <script src="index.js"></script>
   </body>
 </html>
