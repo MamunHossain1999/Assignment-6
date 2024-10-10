@@ -1,0 +1,31 @@
+***** Project Name: Peddy-Pet Adoption Platform.
+
+*****Short description of the Project:
+
+ Peddy is an online platform that helps people find pets to adopt. It connects potential pet adopters with animal shelters and individuals who need to find new homes for their pets. The platform provides detailed information about each pet, such as their breed, age, health history, and personality, making it easier for users to choose the right pet for them. Users can search for pets based on their location, size, and personal preferences. Animal shelters can also easily update the platform with new pets that are available for adoption. The main goal of Peddy is to simplify and improve the pet adoption process, making it easier and more accessible for everyone involved.
+
+
+
+*****5key features of the project: 
+1.Advanced Pet Search Filters: Users can filter pets by location, breed, size, age, and even temperament to find the perfect match based on their preferences and living situation.
+
+2.Detailed Pet Profiles: Each pet has a comprehensive profile with photos, medical history, vaccination status, and behavioral details, helping adopters make informed decisions.
+
+3.Shelter and Rescue Listings: Animal shelters and rescue organizations can list their available pets, update statuses, and communicate directly with potential adopters through the platform.
+
+4.Adoption Application Process: The platform offers an integrated adoption application form where users can submit their interest and provide necessary documents, streamlining the adoption process for both the user and the shelter.
+
+5.Success Stories and Community Forum: A section where adopters can share their adoption stories, connect with other pet owners, and seek advice or tips on pet care, fostering a supportive community of pet lovers.
+
+
+******ES6 features used:
+1.arrow functions
+2.forEach loop
+3.Promises and Async/Await
+4.directly the fatch
+5.setTimeout functions
+6.Classes
+7.Default Parameters
+
+
+*****live link to the deployed project: https://friendly-genie-0c9584.netlify.app/
